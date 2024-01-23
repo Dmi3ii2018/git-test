@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { create } from 'zustand'
+
 import './App.css';
 
+const useStore = create((set) => ({
+  bears: 0,
+  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+  removeAllBears: () => set({ bears: 0 }),
+}))
+
 function App() {
+  const bears = useStore((state) => state.bears);
+  const increasePopulation = useStore((state) => state.increasePopulation)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {bears}
+      <button onClick={increasePopulation} type="button">+</button>
     </div>
   );
 }

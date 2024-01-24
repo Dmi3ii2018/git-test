@@ -11,6 +11,8 @@ console.log("asdsafasfs")
 if(true) {
   console.log("conds")
 }
+console.log("dfghs")
+console.log("sds")
 function App() {
   const bears = useStore((state) => state.bears);
   const increasePopulation = useStore((state) => state.increasePopulation)

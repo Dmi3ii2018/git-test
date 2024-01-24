@@ -8,6 +8,7 @@ const useStore = create((set) => ({
   removeAllBears: () => set({ bears: 0 }),
 }))
 console.log("asdsafasfs")
+console.log("dfghs")
 function App() {
   const bears = useStore((state) => state.bears);
   const increasePopulation = useStore((state) => state.increasePopulation)

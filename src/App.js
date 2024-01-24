@@ -10,6 +10,7 @@ const useStore = create((set) => ({
 console.log("asdsafasfs")
 if(true) {
   console.log("conds")
+  console.log("asds")
 }
 console.log("dfghs")
 console.log("sds")

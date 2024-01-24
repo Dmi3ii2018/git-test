@@ -8,10 +8,6 @@ const useStore = create((set) => ({
   removeAllBears: () => set({ bears: 0 }),
 }))
 console.log("asdsafasfs")
-if(true) {
-  console.log("conds")
-  console.log("asds")
-}
 console.log("dfghs")
 console.log("sds")
 function App() {

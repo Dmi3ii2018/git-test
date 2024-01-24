@@ -7,7 +7,7 @@ const useStore = create((set) => ({
   increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
   removeAllBears: () => set({ bears: 0 }),
 }))
-console.log("asdfs")
+console.log("asdsafasfs")
 function App() {
   const bears = useStore((state) => state.bears);
   const increasePopulation = useStore((state) => state.increasePopulation)
